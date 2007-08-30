@@ -1,6 +1,6 @@
 %define	name	chmlib
 %define	version	0.39
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 
 %define	oname	chm
 %define	major	0
