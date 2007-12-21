@@ -15,6 +15,7 @@ Group:		System/Libraries
 Source0:	http://freshmeat.net/redir/chmlib/22229/url_tgz/%{name}-%{version}.tar.bz2
 Patch1:		chmlib-0.37-morearchs.patch
 URL:		http://freshmeat.net/redir/chmlib/22229/url_homepage/chmlib
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 CHMLIB is a library for dealing with Microsoft ITSS/CHM format files.
