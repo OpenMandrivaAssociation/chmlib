@@ -1,6 +1,6 @@
 %define	name	chmlib
 %define	version	0.39
-%define	release	%mkrel 3
+%define	release	%mkrel 4
 
 %define	oname	chm
 %define	major	0
@@ -60,7 +60,7 @@ is able to gain reasonably good performance indexing into ITSS archives.
 %build
 %configure2_5x
 %make CFLAGS="%{optflags} -DCHM_MT -DCHM_USE_PREAD -DCHM_USE_IO64 -L.libs" \
-    LDFLAGS="%{rpmldflags} -lpthread" CC="%{__cc}" LD="%{__cc}"
+    LDFLAGS="%{ldflags} -lpthread" CC="%{__cc}" LD="%{__cc}"
 
 %install
 rm -rf %{buildroot}
