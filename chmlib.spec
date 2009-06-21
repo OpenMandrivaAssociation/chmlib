@@ -1,20 +1,16 @@
-%define	name	chmlib
-%define	version	0.39
-%define	release	%mkrel 4
-
-%define	oname	chm
-%define	major	0
-%define	libname	%mklibname %{oname} %{major}
+%define	oname chm
+%define	major 0
+%define	libname %mklibname %{oname} %{major}
 
 Summary:	A library for dealing with Microsoft ITSS/CHM format files
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		chmlib
+Version:	0.40
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Libraries
-Source0:	http://freshmeat.net/redir/chmlib/22229/url_tgz/%{name}-%{version}.tar.bz2
+URL:		http://www.jedrea.com/chmlib/
+Source0:	http://www.jedrea.com/chmlib/%{name}-%{version}.tar.bz2
 Patch1:		chmlib-0.37-morearchs.patch
-URL:		http://freshmeat.net/redir/chmlib/22229/url_homepage/chmlib
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -55,7 +51,7 @@ is able to gain reasonably good performance indexing into ITSS archives.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch1 -p1 -b .more_archs
+%patch1 -p0 -b .more_archs
 
 %build
 %configure2_5x
