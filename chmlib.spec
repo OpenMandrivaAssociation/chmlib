@@ -1,6 +1,6 @@
 Name: chmlib
 Version: 0.40
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPL
 Group: System/Libraries
 Summary: A library for dealing with Microsoft ITSS/CHM format files
