@@ -67,7 +67,6 @@ is able to gain reasonably good performance indexing into ITSS archives.
 %defattr(-,root,root)
 %{_includedir}/*.h
 %{_libdir}/*.so
-%{_libdir}/*.la
 
 #----------------------------------------------------------------------
 
