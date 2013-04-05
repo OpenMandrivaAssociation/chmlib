@@ -65,4 +65,4 @@ install -d %{buildroot}{%{_libdir},%{_includedir}}
 %files -n %{devname}
 %{_includedir}/*.h
 %{_libdir}/*.so
-
+%{_libdir}/*.a
