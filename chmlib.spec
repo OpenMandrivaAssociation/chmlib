@@ -45,6 +45,7 @@ This package contains the development files for %{name}.
 
 %build
 %configure2_5x \
+	--enable-static \
 	--enable-examples
 
 export CFLAGS="%{optflags} -DCHM_MT -DCHM_USE_PREAD -DCHM_USE_IO64 -L.libs"
