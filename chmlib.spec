@@ -1,6 +1,7 @@
 %define	major	0
 %define	libname	%mklibname chm %{major}
 %define devname %mklibname -d chm
+%define _disable_lto 1
 
 Summary:	A library for dealing with Microsoft ITSS/CHM format files
 Name:		chmlib
