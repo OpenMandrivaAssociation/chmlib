@@ -9,7 +9,7 @@ Version:	0.40
 Release:	19
 License:	GPLv2
 Group:		System/Libraries
-Url:		http://www.jedrea.com/chmlib/
+Url:		https://www.jedrea.com/chmlib/
 Source0:	http://www.jedrea.com/chmlib/%{name}-%{version}.tar.bz2
 Patch1:		chmlib-0.37-morearchs.patch
 Provides:	libchm-bin
