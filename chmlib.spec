@@ -14,6 +14,11 @@ Source0:	http://www.jedrea.com/chmlib/%{name}-%{version}.tar.bz2
 Patch1:		chmlib-0.37-morearchs.patch
 Provides:	libchm-bin
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 CHMLIB is a library for dealing with Microsoft ITSS/CHM format files.
 Right now, it is a very simple library, but sufficient for dealing with
